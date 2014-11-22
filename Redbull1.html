@@ -1,0 +1,110 @@
+<html>
+<head>
+<style>
+
+
+</style>
+
+
+
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+function up() {
+  if (redball.top>=5){redball.top=redball.top-5}
+  else {}
+}
+function up100() {
+for (var i=1;i<=100; i++){up();}
+}
+
+function down() {
+if (redball.top<=615){redball.top=redball.top+5}
+	else{}
+	} 
+	function down100() {
+	for (var i=1;i<=100; i++){down();}
+	}
+
+function left() {
+  if (redball.left>=5){redball.left=redball.left-5}
+  else {}
+}
+function left100() {
+for (var i=1;i<=100; i++){left();}
+}
+
+
+  function right() {
+  if(redball.left<=1315){ redball.left=redball.left+5;}
+}
+        function square() {                                
+   redball.left= redball.left-5;
+   redball.left= redball.left-5;
+   redball.left= redball.left-5;
+   redball.left= redball.left-5;
+   redball.top= redball.top-5;
+   redball.top= redball.top-5;
+   redball.top= redball.top-5;
+   redball.top= redball.top-5;
+   redball.left=redball.left+5;
+   redball.left=redball.left+5;
+   redball.left=redball.left+5;
+   redball.left=redball.left+5;
+   redball.top= redball.top+5;
+   redball.top= redball.top+5;
+   redball.top= redball.top+5;
+   redball.top= redball.top+5;
+}
+ 
+	function moveupright() {
+	moveup() ;
+	
+		if(redball.left<=1315){ redball.left=redball.left+5;}
+		
+		}
+		
+		function moveupleft() {
+		moveup();
+		moveleft();
+		}
+		function movedownleft() {
+		movedown();
+		moveleft();
+		}
+		function movedownright() {
+		movedown();
+		moveright();
+		}
+		
+		</script>
+   </head>
+<body>
+<img id="redball" src="basketball.png"  src="moveUp.png" alt=" height="42" width="42" alt= javascript button />
+<table>
+<tbody>
+    <tr>
+		<td><button onclick="moveupleft()"><img src="upleft.jpg" height= 100; width= 100; /></button></td>
+		<td><button onclick="up()"><img src="up.jpg" height= 100; width= 100; /></button></td>
+		<td><button onclick="moveupright()"><img src="upright.jpg" height= 100; width= 100; /></button></td>
+	</tr>
+	<tr>
+		<td><button onclick="left()"><img src="left.jpg" height=100; width=100;/></button></td>
+		<td><button onclick="square()"><img src="SS.jpg" height=100; width=100;/></button></td>
+		<td><button onclick="right()"><img src="right.jpg" height=100; width=100;/></button></td>
+	</tr>
+	<tr>
+		<td><button onclick="movedownleft()"><img src="downleft.jpg" height=100; width=100;/></button></td>
+		<td><button onclick="down()"><img src="down.jpg" height=100; width=100;/></button></td>
+		<td><button onclick="movedownright()"><img src="downright.jpg" height=100; width=100;/></button></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+</body>
+</html>
